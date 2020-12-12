@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAI by Jairo</title>
+    <link rel="shortcut icon" href="pictures/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="javascripts/funciones.js"></script>
+</head>
+<body>
+    <div id="container">
+        <!-- barra responsive y sticky -->
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#inicio" class="active"><i class="fa fa-home" ></i>
+                </a>
+                <a href="#intro">Introducción</a>
+                <a href="#tipos">Tipos</a>
+                <a href="#funcionamiento">Funcionamiento</a>
+                <a href="#instal">Instalación</a>
+                <a href="#contac">Contacto</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section id="hero">
+        <h2>SAI (Sistema alimentación interrumpida)</h2>
+        </section>
+        <!-- primera seccion introducción -->
+        <p class="textoIntro">INTRODUCCIÓN</p> 
+        <section id="intro" class="grid2col">
+            <!-- parte 1 intro -->
+            <div class="col2" id="izqda">
+                <h2>¿Qué es?</h2>
+                <p>Las siglas SAI vienen de (Sistema de alimentación interrumpida), es un dispositivo que gracias a sus baterías u otros elementos que almacenan energía.</p>
+            </div>
+            <div class="imgcol2" id="dcha">
+                <img src="./pictures/intro1.png" alt="Persona pensando...">
+            </div>
+
+            <!-- parte 2 intro -->
+            <div class="imgcol2" id="izqda">
+                <img src="./pictures/intro2.png" alt="Persona con portatil...">
+            </div>
+            <div class="col2" id="dcha" >
+                <h2>¿Qué hace?</h2>
+            <p>Suministra la energía almacenada para manterner los equipos o dispositivos conectados mientras ocurre un apagón.</p>
+            </div>
+
+            <!-- parte 3 intro -->
+            <div class="col2" id="izqda">
+                <h2>¿Para qué sirve?</h2>
+                <p>Sirve para una persona la cuál tiene bastantes apagones, y debido a ello puede perder muchos archivos, documentos o trabajos que está realizando. De está manera el equipo puede aguantar mientras vuelve la luz o le da tiempo a guardar todo correctamente.</p>
+            </div>
+            <div class="imgcol2" id="dcha">
+                <img src="./pictures/intro3.png" alt="Persona con cartel...">
+            </div>
+        </section>
+        <!-- segunda seccion -->
+        <p class="textoIntro">TIPOS</p>
+        <section id="tipos" class="grid4col">
+            <div class="col4">
+            <img src="./pictures/SAIOFF.jpg">
+            <p>Estos funcionan de forma que cuando la corriente deja de llegar, las baterías actúan y alimentan los dispositivos conectados. Proporciona una protección básica. Protege de fallos, subidas y bajadas de tensión. Su utiliza para proteger los dispositivos comunes (ordenadores, monitores, televisores, router, etc).</p>
+            <button onclick="window.location.href='masinfo.html'">Leer más</button>
+            </div>
+            <div class="col4">
+                <img src="./pictures/SAIIN.png">
+            <p>Son similares a los Off-line pero añaden más protección contra cambios en la corriente. Suele mejorar la calidad de la alimentación eléctrica. Se usa en servidores o grabadores que requieren una protección especial.</p>
+            <button>Leer más</button>
+            </div>
+            <div class="col4">
+            <img src="./pictures/SAION.jpg">
+            <p>El más sofisticado. Ofrece protección contra todos los problemas eléctricos que puede haber. Lo malo es que sus baterías hay que cambiarlas más frecuentemente y su coste es superior a los otros. Se suelen usar para la protección de cosas de valor en empresas (servidores, ordenadores, cámaras, etc).</p>
+            <button>Leer más</button>
+            </div>
+        </section>
+
+        <p class="textoIntro">FUNCIONAMIENTO</p>
+        <section id="funcionamiento">
+        <img src="pictures/SAIIII.png" alt="SAI" id="SAI">
+        <p>El SAI hace de regleta teniendo conectados los dispositivos mediante la corriente eléctrica, para su uso tenemos que saber los Vatios(W) que consume cada dispositivo conectado, para cuando se produce un apagón pueda suministrar la energía suficiente sobre los dispositivos para mantenerlos encendidos mientras se recupera la corriente. Hace la función de batería.
+        </p>
+        </section>
+        <!-- SECCION 4 -->
+        <p class="textoIntro">INSTALACIÓN</p>
+        <section id="instalacion" class="grid2col">
+            <div class="col2" id="izqda">
+                <div class="iframe-responsive"><!-- necesario para responsividad del iframe interior-->
+                    <iframe class="iframe-content" src="https://www.youtube.com/watch?v=ljgw5HYda7I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col2" id="dcha">
+                <p>Conectamos los dispositivos o equipos a el SAI</p>
+                <p>Conectamos el SAI a la corriente. (Un enchufe)</p>
+                <p>El equipo debería detector los drivers automáticamente y configurarse para que tenga acceso a encender el equipo o alimentarlo mediante el SAI, a veces está configuración tiene que ser manual.</p>
+
+            </div>
+        </section>
+        <footer class="grid3col">
+            <!-- Contacto tradicional, dirección, teléfono, correo -->
+            <div class="col3">
+                <h3>Contáctanos:</h3>
+            <p>C/ Frederik Termann n 3<br>
+                Incubadora de empresas<br>
+                PTA - Málaga</p>
+            <p>Teléfono: 111 22 33 44</p>
+            <p>Email: yoquese@elmio.com</p>
+            </div>
+            <!-- enlaces de barra de navegación repetidos -->
+            <div class="col3">
+                <h3>Contenido:</h3>
+                <a href="#hero" class="active">Inicio</a><br>
+                <a href="#intro">Bienvenida</a><br>
+                <a href="#historia">Historia</a><br>
+                <a href="#funcionamiento">Cómo?</a><br>
+                <a href="#contacto">Contacta</a><br>
+                <a href="#tipos">Tipos</a></p>
+            </div>
+            <!-- redes sociales -->
+            <div class="col3">
+                <h3>Redes Sociales:</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            
+ 
+         </footer>
+    </div>
+
+    
+</body>
+</html>

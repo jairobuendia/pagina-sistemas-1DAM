@@ -1,0 +1,264 @@
+/* aquí se detalla el estilo de la landing page de Sistemas Informáticos */
+
+/************ FUENTES ***************/
+
+
+@font-face{
+       src:url('../fonts/Simpleness.otf');
+       font-family:herofont;
+}
+
+@font-face {
+       src: url("../fonts/LASER.ttf");
+       font-family: laser;
+       
+}
+@font-face {
+       src: url("../fonts/Epilogue-Regular.ttf");
+       font-family: epilogue;
+}
+
+
+/********* LAYOUT BÁSICO ****************/
+
+body {background-color: white;
+       font-family:epilogue;}
+       
+       
+#container {width:80%;  /* este será el ancho de todas las secciones */
+              margin:auto;
+              height:300px;
+              background-color:white;
+}
+
+/* BARRA STICKY */
+
+nav {position:sticky;
+       position:-webkit-sticky;
+       top:0;
+       z-index:99;
+}
+/***********ESTILO NAV RESPONSIVE *********/
+.topnav {
+       overflow: hidden;
+       background-color: #404040;
+       font-weight: bold;
+}     
+.topnav a {
+       float: left;
+       display: block;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+}
+.topnav a:hover {
+       color: #0FC0AF;
+}
+.topnav .icon {
+       display: none;
+}
+
+@media screen and (max-width: 600px) {
+.topnav a:not(:first-child) {display: none;}
+.topnav a.icon {
+       float: right;
+       display: block;
+       }
+}
+
+@media screen and (max-width: 600px) {
+.topnav.responsive {position: relative;}
+.topnav.responsive .icon {
+       position: absolute;
+       right: 0;
+       top: 0;
+       }
+.topnav.responsive a {
+       float: none;
+       display: block;
+       text-align: left;
+       }
+}
+
+
+/****** HERO SECTION ************/            
+
+#hero {position:relative;
+       background-image:url('../pictures/hero-section.jpg');
+       background-size: cover;
+       background-position: left;
+       height: 40vh; 
+       width: 100%;
+
+       }
+
+#hero h2 {position:absolute; 
+       top:6vh;
+       right:6vw;
+       color:white;
+       font-family:herofont;
+       font-size:5vh;
+       margin: 5%;
+       background-color:rgba(0, 0, 0, 0.753);
+       padding:15px;
+       border-radius:10px;
+}
+
+
+/********** ESTILO CABEZERA SECCIONES ************/
+.textoIntro { width:60%;
+       margin:3% auto;
+       text-align:center;
+       font-size:5vh;
+       line-height: 60px;
+       padding-bottom:2%;
+       padding-top: 1%;
+       border-bottom:2px solid  #0FC0AF;
+       border-top:2px solid  #0FC0AF;
+       font-family: laser;
+       font-weight: bold;
+}
+
+
+/******** PRIMERA SECTION ***********/
+#intro {padding:30px;
+       }
+
+.grid2col {display:grid;  /* propiedad de estilo para distribución grid */
+grid-template-columns:50% 50%;
+}
+.col2 {
+       padding:10%;
+       font-size: 100%;
+}
+
+#dcha {text-align: right;}
+
+.imgcol2 img {
+       width: 250px;  
+}
+/******* LA MEDIA QUERY ES UN IF QUE SI CUMPLE LA CONDICIÓN ******/
+/******* MODIFICA EL ESTILO APLICADO A LOS ELEMENTOS QUE INDIQUE ****/        
+@media only screen and (max-width:600px){
+       #container {width:100%;}
+       #redsai {width:100%;}
+       /* #intro p {width:100%;} */
+}
+
+/* SEGUNDA SECCION */
+
+#tipos {padding:20px;
+       /* background-color:rgb(179, 216, 179);*/}
+
+.grid4col {display:grid;
+       grid-template-columns:auto auto auto auto ;
+}
+.col4 {padding:15px;
+       margin:10px;
+       background-color:white;
+       border:1px solid grey;
+       border-radius:10px;
+       box-shadow:2px 2px 2px grey;
+       transition:0.5s;}
+.col4:hover {box-shadow:2px 4px 8px grey;}
+.col4 img {width:100%;
+           /* border-radius:50%; */
+       opacity:0.6;
+       transition:1s;}
+.col4 img:hover {opacity:1;}
+.col4 .fa {font-size:6em;
+       text-align:center;
+       display:block;
+       color:orangered;}
+.col4 button {background-color:#0FC0AF;
+              padding:8px;
+              border:none;
+              color:white;
+              font-weight:bold;
+              border-radius:10px;
+              display:block;
+              margin:auto;
+              }
+.col4 button:hover {background-color:#0ba596;}
+
+
+/* FUNCIONAMIENTO SECTION */
+#funcionamiento {background-color: #0ba5968f;
+       padding:50px;}
+#funcionamiento p {font-size:1.2em;
+       text-align:justify;
+       line-height:35px;
+       margin: 20px;
+}
+
+#SAI {width:50%;
+       float:left;
+       margin-right:20px;
+       margin-bottom: 20px;
+       text-align:left;}
+
+/* MEDIA ONLY */
+
+@media only screen and (max-width:900px){
+       .grid4col {grid-template-columns: 50% 50%;}
+}
+@media only screen and (max-width:600px){ /* tamaño de móvil */
+       .grid4col {grid-template-columns: 100%;}
+       #SAI {width:100%;}
+       
+}
+
+/* 3 COLUMNAS */
+.grid3col {display:grid;
+       grid-template-columns:auto auto 50%;}
+.col3 {padding:5%;
+}
+
+/* FOOTERRRR */
+footer {padding:20px;
+       background-color:rgb(179, 216, 179) ;}
+
+footer .fa {
+       padding: 10px;
+       font-size: 20px;
+       width: 30px;
+       text-align: center;
+       text-decoration: none;
+       margin: 5px 2px;
+}    
+.fa:hover {
+       opacity: 0.7;
+}
+
+.fa-facebook {
+background: #3B5998;
+color: white;
+}
+
+.fa-twitter {
+background: #55ACEE;
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+background: #007bb5;
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.fa-instagram {
+background: #125688;
+color: white;
+}
+
