@@ -31,9 +31,28 @@ body {background-color: white;
               background-color:white;
 }
 
+/* FLECHA PARA SUBIR */
+.fa-arrow-up {position:fixed;
+       bottom:30px;
+       right:30px;
+       color: rgba(17, 4, 4, 0.5);
+       padding:10px;
+       border-radius:5px;
+       border:1px solid rgba(17, 4, 4, 0.5);
+       z-index:99;}
+
+a {text-decoration:none;
+color:green;
+font-weight:bold;}
+a:hover {color:red;}
+
+button {cursor:pointer;
+}
+
 /* BARRA STICKY */
 
-nav {position:sticky;
+nav {
+       position:sticky;
        position:-webkit-sticky;
        top:0;
        z-index:99;
@@ -43,6 +62,7 @@ nav {position:sticky;
        overflow: hidden;
        background-color: #292a2f;
        font-weight: bold;
+       /* padding-right: 90vh; */
 }     
 .topnav a {
        float: left;
@@ -188,7 +208,7 @@ grid-template-columns:50% 50%;
 }
 
 #instalacion p {
-       font-size: 2.5vh;
+       font-size: 120%;
 
 }
 #instalacion p i {
@@ -437,6 +457,7 @@ footer{
        .grid4col {grid-template-columns: 100%;}
        
  }
-       
-
-       
+            
+ @media only screen and (max-width:400px){
+       .imgcol2 img {width:200px;}
+}
